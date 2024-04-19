@@ -1,3 +1,15 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn{
+    background-color: rgb(230, 38, 38);
+    color: white;
+    border-radius: 6px;
+    border: none;
+}
+
+
 .header{
     position: fixed;
     top: 0;
