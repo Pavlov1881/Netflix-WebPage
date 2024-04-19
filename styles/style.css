@@ -23,3 +23,24 @@ body{
     align-items: center;
 
 }
+
+#hero{
+    height: 100vh;
+    position: relative;
+    color: white;
+    text-align: center;
+
+}
+
+
+#hero .hero-bg{
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#hero .wrapper{
+    
+}
