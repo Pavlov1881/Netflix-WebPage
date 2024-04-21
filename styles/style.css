@@ -12,6 +12,7 @@ body{
 
 .header{
     position: fixed;
+    z-index: 10;
     top: 0;
     left: 0;
     width: 100%;
@@ -30,6 +31,24 @@ body{
     color: white;
     text-align: center;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.72875087535014) 50%, rgba(0, 0, 0, 1) 100%);
+    opacity: 0.8;
+
 }
 
 
@@ -42,5 +61,44 @@ body{
 }
 
 #hero .wrapper{
-    
+    width: 90%;
+    position: relative;
+}
+
+#hero .title{
+    font-size: 1.25rem;
+    line-height: 1.2;
+    margin-bottom: 1.25rem;
+}
+
+#hero .subtitle{
+    font-size: 1rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    font-weight: normal;
+}
+
+#hero .form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#hero .form input{
+    border: 1px solid grey;
+    padding: 0.75rem 1.25rem;
+    width: 100%;
+    border-radius: 4px;
+}
+
+#hero .form .btn{
+    padding: 0.75rem 1.25rem
+}
+
+#hero .desc{
+    font-size: 1rem;
+    line-height: 1.2;
+    font-weight: normal;    
 }
